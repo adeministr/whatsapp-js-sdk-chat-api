@@ -1,4 +1,6 @@
 const sendMessage = require('./sendMessage')
+const createGroup = require('./createGroup')
+
 const handlers = require('./handlers')
 const CredentialsStore = require('./CredentialsStore')
 const settings = require('./settings')
@@ -30,8 +32,12 @@ module.exports = class {
         return this.credentials.get(...params)
     }
 
-    sendMessage(...params) {
-        return sendMessage(this.getCredentials(), ...params)
+    sendMessage(phone, text) {
+        return sendMessage(this.getCredentials(), ...arguments)
+    }
+
+    createGroup(phones, groupName, messageText = '') {
+        return createGroup(this.getCredentials(), ...arguments)
     }
 
     onceMessageViewed(...params) {

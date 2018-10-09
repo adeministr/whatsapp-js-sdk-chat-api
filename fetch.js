@@ -28,7 +28,7 @@ module.exports = function (url, method = 'GET', data = {}, postHeader) {
     }
     options.url = url;
 
-    options.timeout = 10 * 60 * 1000;
+    options.timeout = 60 * 60 * 1000;
 
     return axios(options)
         .then(resp => ({ data: (resp.data), status: resp.status }))
