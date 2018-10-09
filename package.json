@@ -1,0 +1,24 @@
+{
+  "name": "whatsapp-js-sdk-chat-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chatapi/whatsapp-js-sdk-chat-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chatapi/whatsapp-js-sdk-chat-api/issues"
+  },
+  "homepage": "https://github.com/chatapi/whatsapp-js-sdk-chat-api#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "qs": "^6.5.2",
+    "query-string": "^6.2.0"
+  }
+}
